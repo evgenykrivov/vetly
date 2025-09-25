@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  vetly-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: vetly-web
+    restart: unless-stopped
+    ports:
+      - "8446:3000"
+    volumes:
+      - ./logs:/var/log/nginx
+    networks:
+      - vetly-network
+    environment:
+      - NODE_ENV=production
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:3000/health.txt"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 5s
+
+networks:
+  vetly-network:
+    driver: bridge
+
