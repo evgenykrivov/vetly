@@ -1,22 +1,123 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-* {
-  box-sizing: border-box;
+:root {
+  --vetly-pink: #FF6B9D;
+  --vetly-pink-dark: #E55A8A;
+  --vetly-orange: #FF9F40;
+  --vetly-orange-dark: #FF8C1A;
+  --vetly-cream: #FFF7ED;
+  --vetly-ink: #111827;
+  --vetly-muted: #6B7280;
+  --vetly-line: #E5E7EB;
+  --vetly-white: #FFFFFF;
 }
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
-    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-    'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: var(--vetly-ink);
+    background-color: var(--vetly-white);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: var(--vetly-ink);
+  }
+
+  /* Focus styles for accessibility */
+  button:focus-visible,
+  a:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible {
+    outline: 2px solid var(--vetly-pink);
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  .btn-primary {
+    @apply bg-vetly-pink hover:bg-vetly-pink-dark text-white font-semibold px-6 py-3 rounded-full transition-all duration-200 hover:scale-105 focus:scale-105 shadow-lg hover:shadow-xl;
+  }
+
+  .btn-secondary {
+    @apply bg-white hover:bg-gray-50 text-vetly-ink font-semibold px-6 py-3 rounded-full transition-all duration-200 hover:scale-105 focus:scale-105 shadow-lg hover:shadow-xl;
+  }
+
+  .pill-card {
+    @apply bg-white rounded-2xl p-4 shadow-card hover:shadow-card-hover transition-all duration-200 border border-vetly-line;
+  }
+
+  .section-padding {
+    @apply py-section-sm md:py-section-md lg:py-section-lg;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .animate-on-scroll.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-parallax,
+    .animate-marquee,
+    .animate-on-scroll {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+}
+
+/* Marquee animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee-container:hover .marquee-content {
+  animation-play-state: paused;
 }
 
 #root {

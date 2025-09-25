@@ -1,15 +1,30 @@
 
+import Header from './components/Header';
+import Hero from './components/Hero';
+import PillList from './components/PillList';
+import TrustBlock from './components/TrustBlock';
+import Features from './components/Features';
+import BenefitsStrip from './components/BenefitsStrip';
+import CommunityMarquee from './components/CommunityMarquee';
+import DogGallery from './components/DogGallery';
+import StorePitch from './components/StorePitch';
+import Reviews from './components/Reviews';
+import Footer from './components/Footer';
+
 function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-vetly-primary to-vetly-secondary flex items-center justify-center">
-      <div className="text-center">
-        <h1 className="text-6xl font-bold text-white mb-4 animate-fade-in">
-          Hello
-        </h1>
-        <p className="text-xl text-white/80 animate-slide-up">
-          Vetly Landing - Ready to start
-        </p>
-      </div>
+    <div className="min-h-screen">
+      <Header />
+      <Hero />
+      <PillList />
+      <TrustBlock />
+      <Features />
+      <BenefitsStrip />
+      <CommunityMarquee />
+      <DogGallery />
+      <StorePitch />
+      <Reviews />
+      <Footer />
     </div>
   );
 }
