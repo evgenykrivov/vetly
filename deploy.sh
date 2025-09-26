@@ -2,24 +2,24 @@
 
 echo "🚀 Deploying Vetly Landing..."
 
-# Остановка существующих контейнеров
+# Stop existing containers
 echo "📦 Stopping existing containers..."
 docker-compose down
 
-# Удаление старых образов (опционально)
+# Remove old images (optional)
 echo "🗑️ Cleaning up old images..."
 docker image prune -f
 
-# Сборка и запуск новых контейнеров
+# Build and start new containers
 echo "🔨 Building and starting new containers..."
 docker-compose up --build -d
 
-# Проверка статуса
+# Check deployment status
 echo "✅ Checking deployment status..."
 sleep 10
 docker-compose ps
 
-# Проверка логов
+# Check recent logs
 echo "📋 Recent logs:"
 docker-compose logs --tail=20
 

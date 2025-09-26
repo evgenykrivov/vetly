@@ -1,20 +1,30 @@
 {
-    "name": "vetly",
-    "version": "0.1.0",
-    "description": "Vetly Landing Project",
-    "repository": {
-      "type": "git",
-      "url": ""
-    },
-    "keywords": [
-      "vite",
-      "react",
-      "typescript",
-      "tailwind",
-      "vetly"
-    ],
-    "author": "Vetly Team",
-    "license": "MIT",
+  "name": "vetly",
+  "version": "1.0.0",
+  "description": "Vetly - The Complete Pet Care App for Dog Parents. Transform your pet care journey with personalized care plans, 24/7 vet consultations, expert training guides, and health tracking. Trusted by veterinarians and loved by pet parents worldwide.",
+  "homepage": "https://vetly.gg",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vetly/vetly-landing"
+  },
+  "keywords": [
+    "pet care app",
+    "dog training",
+    "veterinary care", 
+    "pet health tracker",
+    "dog care",
+    "veterinarian consultation",
+    "pet wellness",
+    "animal health",
+    "dog training app",
+    "pet care platform",
+    "react",
+    "typescript",
+    "tailwind",
+    "vite"
+  ],
+  "author": "Vetly Team <contact@vetly.gg>",
+  "license": "MIT",
     "scripts": {
       "dev": "vite",
       "build": "tsc --noEmit && vite build",

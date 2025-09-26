@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://vetly.gg/sitemap.xml
+
+# Additional crawl instructions
+Crawl-delay: 1
+
+# Block access to admin areas (if any in future)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /.env
+
+# Allow important pages
+Allow: /
+Allow: /about-us
+Allow: /privacy
+Allow: /terms

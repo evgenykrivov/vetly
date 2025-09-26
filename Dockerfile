@@ -2,54 +2,54 @@ FROM node:18-alpine as build
 
 WORKDIR /app
 
-# Копируем package.json и устанавливаем зависимости
+# Copy package.json and install dependencies
 COPY package*.json ./
 RUN npm install
 
-# Копируем переменные окружения
+# Copy environment variables
 COPY ./env ./env
 
-# Копируем остальные файлы
+# Copy remaining files
 COPY . .
 
-# Проверяем, что env-файлы доступны
+# Check that env files are available
 RUN ls -la env
 RUN cat env/.env.production || echo "Production env file not found"
 
-# Выполняем сборку с явным указанием продакшн режима
+# Build with explicit production mode
 RUN NODE_ENV=production npm run build
 
-# Проверяем результаты сборки
+# Check build results
 RUN ls -la build
 RUN ls -la build/assets || echo "No assets directory"
 RUN find build -name "*.js" | head -5 || echo "No JS files found"
 
-# Вторая стадия - nginx
+# Second stage - nginx
 FROM nginx:alpine
 
-# Копируем собранные файлы из build
+# Copy built files from build stage
 COPY --from=build /app/build /usr/share/nginx/html
 
-# Создаём директорию для логов
+# Create logs directory
 RUN mkdir -p /var/log/nginx
 
-# Копируем конфигурацию nginx
+# Copy nginx configuration
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-# Проверяем содержимое директории
+# Check directory contents
 RUN ls -la /usr/share/nginx/html
 RUN find /usr/share/nginx/html -name "*.js" | head -5 || echo "No JS files found in nginx html dir"
 
-# Создаем файл для проверки здоровья
+# Create health check file
 RUN echo "OK" > /usr/share/nginx/html/health.txt
 
-# Добавляем скрипт для старта сервера
+# Add server startup script
 COPY docker-entrypoint.sh /
 RUN chmod +x /docker-entrypoint.sh
 
 EXPOSE 3000
 
-# Запускаем nginx через entrypoint скрипт
+# Start nginx via entrypoint script
 ENTRYPOINT ["/docker-entrypoint.sh"]
 CMD ["nginx", "-g", "daemon off;"]
 
