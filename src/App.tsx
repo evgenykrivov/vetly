@@ -6,7 +6,6 @@ import TrustBlock from './components/TrustBlock';
 import Features from './components/Features';
 import BenefitsStrip from './components/BenefitsStrip';
 import CommunityMarquee from './components/CommunityMarquee';
-import DogGallery from './components/DogGallery';
 import StorePitch from './components/StorePitch';
 import Reviews from './components/Reviews';
 import Footer from './components/Footer';
@@ -21,7 +20,6 @@ function App() {
       <Features />
       <BenefitsStrip />
       <CommunityMarquee />
-      <DogGallery />
       <StorePitch />
       <Reviews />
       <Footer />

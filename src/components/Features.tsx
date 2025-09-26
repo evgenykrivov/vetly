@@ -26,7 +26,7 @@ const Features = () => {
   const features = [
     {
       icon: (
-        <div className="w-32 h-32 flex items-center justify-center">
+        <div className="w-48 h-48 lg:w-[400px] lg:h-[400px] flex items-center justify-center">
           <img 
             src="/personalized.png" 
             alt="Personalized Care Plan" 
@@ -40,7 +40,7 @@ const Features = () => {
     },
     {
       icon: (
-        <div className="w-32 h-32 flex items-center justify-center">
+        <div className="w-48 h-48 lg:w-[400px] lg:h-[400px] flex items-center justify-center">
           <img 
             src="/quickDaily.png" 
             alt="Quick Daily Health Routines" 
@@ -54,7 +54,7 @@ const Features = () => {
     },
     {
       icon: (
-        <div className="w-32 h-32 flex items-center justify-center">
+        <div className="w-48 h-48 lg:w-[400px] lg:h-[400px] flex items-center justify-center">
           <img 
             src="/healthWellness.png" 
             alt="Health & Wellness Tracker" 
@@ -68,7 +68,7 @@ const Features = () => {
     },
     {
       icon: (
-        <div className="w-32 h-32 flex items-center justify-center">
+        <div className="w-48 h-48 lg:w-[400px] lg:h-[400px] flex items-center justify-center">
           <img 
             src="/activity.png" 
             alt="Activity & Walk Insights" 
@@ -82,7 +82,7 @@ const Features = () => {
     },
     {
       icon: (
-        <div className="w-32 h-32 flex items-center justify-center">
+        <div className="w-48 h-48 lg:w-[400px] lg:h-[400px] flex items-center justify-center">
           <img 
             src="/bond.png" 
             alt="Stronger Bond With Your Pet" 
@@ -96,7 +96,7 @@ const Features = () => {
     },
     {
       icon: (
-        <div className="w-32 h-32 flex items-center justify-center">
+        <div className="w-48 h-48 lg:w-[400px] lg:h-[400px] flex items-center justify-center">
           <img 
             src="/vetExpert.png" 
             alt="Vet & Expert Consultations" 

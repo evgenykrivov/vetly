@@ -69,8 +69,13 @@ const TrustBlock = () => {
       title: "Animal behaviorist, certified dog trainer",
       testimonial: "Vetly has revolutionized how pet parents approach dog training and care. The evidence-based methods and personalized approach make it accessible for everyone, regardless of experience level. I've seen remarkable improvements in both dogs and their families using this platform.",
       avatar: (
-        <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-white shadow-lg bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
-          <span className="text-white text-2xl font-bold">SW</span>
+        <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-white shadow-lg">
+          <img 
+            src="/sarah.png" 
+            alt="Dr. Sarah Williams - Animal behaviorist" 
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
         </div>
       )
     },
@@ -79,8 +84,13 @@ const TrustBlock = () => {
       title: "Veterinary nutritionist and wellness expert",
       testimonial: "The comprehensive approach to pet wellness in Vetly is outstanding. It combines medical expertise with practical daily care, making it an invaluable resource for any pet parent who wants to provide the best care for their furry family member.",
       avatar: (
-        <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-white shadow-lg bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
-          <span className="text-white text-2xl font-bold">MC</span>
+        <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-white shadow-lg">
+          <img 
+            src="/chen.png" 
+            alt="Dr. Michael Chen - Veterinary nutritionist" 
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
         </div>
       )
     }

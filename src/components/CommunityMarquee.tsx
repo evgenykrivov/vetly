@@ -23,56 +23,22 @@ const CommunityMarquee = () => {
     return () => observer.disconnect();
   }, []);
 
-  // Generate dog avatars with different colors and expressions
-  const generateDogAvatar = (id: number, color: string) => (
-    <div key={id} className="flex-shrink-0 w-20 h-20 rounded-full overflow-hidden border-4 border-white shadow-lg">
-      <svg width="80" height="80" viewBox="0 0 80 80" className="w-full h-full">
-        <rect width="80" height="80" fill={color}/>
-        <g transform="translate(15, 20)">
-          {/* Dog face */}
-          <ellipse cx="25" cy="20" rx="20" ry="16" fill="#654321" opacity="0.8"/>
-          <ellipse cx="25" cy="30" rx="16" ry="20" fill="#654321" opacity="0.8"/>
-          
-          {/* Ears */}
-          <ellipse cx="12" cy="12" rx="5" ry="8" fill="#654321" opacity="0.8"/>
-          <ellipse cx="38" cy="12" rx="5" ry="8" fill="#654321" opacity="0.8"/>
-          
-          {/* Eyes */}
-          <circle cx="20" cy="18" r="2" fill="white"/>
-          <circle cx="30" cy="18" r="2" fill="white"/>
-          <circle cx="20" cy="19" r="1" fill="black"/>
-          <circle cx="30" cy="19" r="1" fill="black"/>
-          
-          {/* Nose */}
-          <ellipse cx="25" cy="24" rx="1.5" ry="1" fill="black"/>
-          
-          {/* Mouth */}
-          <path d="M22 28 Q25 31 28 28" stroke="black" strokeWidth="1.5" fill="none"/>
-          
-          {/* Spots for variety */}
-          {id % 3 === 0 && (
-            <>
-              <circle cx="18" cy="22" r="2" fill="white" opacity="0.6"/>
-              <circle cx="32" cy="26" r="1.5" fill="white" opacity="0.6"/>
-            </>
-          )}
-        </g>
-      </svg>
-    </div>
-  );
-
-  const dogColors = [
-    '#D2B48C', '#8B4513', '#F4A460', '#CD853F', '#DEB887',
-    '#A0522D', '#D2691E', '#BC8F8F', '#F5DEB3', '#FFE4B5',
-    '#FFDAB9', '#EEE8AA'
+  // Real dog photos
+  const dogPhotos = [
+    { src: '/dogs/Frame 1000007553.png', alt: 'Happy Golden Retriever' },
+    { src: '/dogs/Frame 1000007554.png', alt: 'Playful Labrador' },
+    { src: '/dogs/Frame 1000007555.png', alt: 'Cute Pomeranian' },
+    { src: '/dogs/Frame 1000007556.png', alt: 'Friendly Beagle' },
+    { src: '/dogs/Frame 1000007557.png', alt: 'Beautiful Husky' },
+    { src: '/dogs/Frame 1000007558.png', alt: 'Adorable Bulldog' },
+    { src: '/dogs/Frame 1000007559.png', alt: 'Energetic Border Collie' }
   ];
 
-  const dogAvatars = Array.from({ length: 24 }, (_, i) => 
-    generateDogAvatar(i, dogColors[i % dogColors.length])
-  );
+  // Duplicate photos to create seamless marquee
+  const allDogPhotos = [...dogPhotos, ...dogPhotos, ...dogPhotos, ...dogPhotos];
 
   return (
-    <section ref={sectionRef} className="section-padding bg-vetly-cream">
+    <section ref={sectionRef} className="section-padding bg-white">
       <div className="container">
         <div className="text-center mb-12 animate-on-scroll">
           <h2 className="text-h2-mobile md:text-h2 font-bold text-vetly-ink mb-4">
@@ -85,16 +51,25 @@ const CommunityMarquee = () => {
 
         <div className="relative overflow-hidden">
           {/* Gradient overlays for smooth edges */}
-          <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-vetly-cream to-transparent z-10"></div>
-          <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-vetly-cream to-transparent z-10"></div>
+          <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-white to-transparent z-10"></div>
+          <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-white to-transparent z-10"></div>
           
           {/* Marquee container */}
           <div className="marquee-container animate-on-scroll" style={{ animationDelay: '0.3s' }}>
-            <div className="flex gap-6 animate-marquee marquee-content">
-              {/* First set of avatars */}
-              {dogAvatars}
-              {/* Duplicate for seamless loop */}
-              {dogAvatars}
+            <div className="flex gap-4 animate-marquee marquee-content">
+              {allDogPhotos.map((photo, index) => (
+                <div
+                  key={index}
+                  className="flex-shrink-0 w-20 h-20 md:w-48 md:h-48 rounded-2xl overflow-hidden shadow-lg hover:scale-110 hover:rotate-3 hover:shadow-xl transition-all duration-300 cursor-pointer"
+                >
+                  <img
+                    src={photo.src}
+                    alt={photo.alt}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </div>
