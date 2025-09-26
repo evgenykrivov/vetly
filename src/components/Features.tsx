@@ -111,7 +111,7 @@ const Features = () => {
   ];
 
   return (
-    <section ref={sectionRef} className="section-padding bg-white">
+    <section id="about" ref={sectionRef} className="section-padding bg-white">
       <div className="container max-w-5xl">
         <div className="space-y-16">
           {features.map((feature, index) => (
@@ -143,9 +143,7 @@ const Features = () => {
         {/* CTA Section */}
         <div className="text-center mt-20 animate-on-scroll" style={{ animationDelay: '0.8s' }}>
           <a 
-            href="https://quiz.vetly.gg/vetly-dog"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="mailto:contact@vetly.gg?subject=Get%20My%20Personal%20Plan&body=Hi%20Vetly%20Team,%0A%0AI'm%20interested%20in%20getting%20a%20personalized%20plan%20for%20my%20pet.%20I%20would%20like%20to%20learn%20more%20about%20your%20tailored%20care%20services.%0A%0APlease%20contact%20me%20to%20discuss%20creating%20a%20personal%20plan%20for%20my%20pet.%0A%0AThank%20you!"
             className="bg-gradient-to-r from-vetly-orange to-vetly-orange-dark hover:from-vetly-orange-dark hover:to-vetly-orange text-white font-semibold px-8 py-4 rounded-full text-lg hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl inline-block"
           >
             Get My Personal Plan

@@ -62,9 +62,7 @@ const Footer = () => {
                   <p className="font-medium text-vetly-ink">
                     Ready to give your pet the best care possible? 
                     <a 
-                      href="https://quiz.vetly.gg/vetly-dog"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      href="mailto:contact@vetly.gg?subject=Start%20Journey%20with%20Vetly&body=Hi%20Vetly%20Team,%0A%0AI'm%20ready%20to%20give%20my%20pet%20the%20best%20care%20possible%20and%20would%20like%20to%20start%20my%20journey%20with%20Vetly.%0A%0APlease%20contact%20me%20to%20learn%20more%20about%20your%20services.%0A%0AThank%20you!"
                       className="text-vetly-pink hover:underline ml-1"
                     >
                       Start your journey with Vetly today.
@@ -78,7 +76,7 @@ const Footer = () => {
       )}
       
       {/* Footer content */}
-    <footer className="bg-vetly-ink text-white section-padding">
+    <footer id="contact" className="bg-vetly-ink text-white section-padding">
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Logo and description */}
@@ -95,12 +93,10 @@ const Footer = () => {
               The comprehensive pet care app that makes pet ownership easier, healthier, and more enjoyable for you and your furry friends.
             </p>
             
-            {/* Quiz CTA Button */}
+            {/* CTA Button */}
             <div className="mt-6">
               <a 
-                href="https://quiz.vetly.gg/vetly-dog"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="mailto:contact@vetly.gg?subject=Get%20Started%20with%20Vetly&body=Hi%20Vetly%20Team,%0A%0AI'm%20interested%20in%20getting%20started%20with%20Vetly%20for%20my%20pet.%20I%20would%20like%20to%20learn%20more%20about%20your%20comprehensive%20pet%20care%20services.%0A%0APlease%20contact%20me%20to%20get%20started.%0A%0AThank%20you!"
                 className="bg-vetly-pink hover:bg-vetly-pink-dark text-white px-6 py-3 rounded-full font-semibold transition-colors duration-200 inline-block text-center"
               >
                 Get Started with Vetly

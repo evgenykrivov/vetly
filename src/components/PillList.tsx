@@ -62,7 +62,7 @@ const PillList = () => {
   ];
 
     return (
-      <section ref={sectionRef} className="section-padding bg-white">
+      <section id="blog" ref={sectionRef} className="section-padding bg-white">
         <div className="container">
           <div className="text-center mb-16 animate-on-scroll">
             <h2 className="text-h2-mobile md:text-h2 font-bold text-vetly-ink mb-8">

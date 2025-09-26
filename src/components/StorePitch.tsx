@@ -24,7 +24,7 @@ const StorePitch = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="section-padding bg-gradient-to-br from-vetly-orange to-vetly-orange-dark overflow-hidden rounded-[60px] mx-4 md:mx-8">
+    <section id="partners" ref={sectionRef} className="section-padding bg-gradient-to-br from-vetly-orange to-vetly-orange-dark overflow-hidden rounded-[60px] mx-4 md:mx-8">
       {/* Background decorations */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-16 left-8 w-32 h-32 bg-white/5 rounded-full blur-2xl"></div>
@@ -45,9 +45,7 @@ const StorePitch = () => {
             {/* CTA Button */}
             <div className="pt-4">
               <a 
-                href="https://quiz.vetly.gg/vetly-dog"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="mailto:contact@vetly.gg?subject=Get%20Started%20with%20Vetly&body=Hi%20Vetly%20Team,%0A%0AI'm%20interested%20in%20getting%20started%20with%20Vetly%20for%20my%20pet.%20I%20would%20like%20to%20learn%20more%20about%20your%20services%20and%20how%20you%20can%20help%20my%20dog.%0A%0APlease%20contact%20me%20to%20get%20started.%0A%0AThank%20you!"
                 className="bg-black hover:bg-gray-800 text-white px-8 py-4 rounded-full font-semibold text-lg hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl inline-block"
               >
                 Get Started

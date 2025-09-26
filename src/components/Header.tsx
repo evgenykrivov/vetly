@@ -20,8 +20,28 @@ const Header = () => {
     { label: 'Blog', href: '#blog' },
     { label: 'For Partners', href: '#partners' },
     { label: 'About Us', href: '#about' },
-    { label: 'Contact Us', href: '#contact' },
+    { label: 'Contact Us', href: 'mailto:contact@vetly.gg?subject=Contact%20Vetly%20Team&body=Hi%20Vetly%20Team,%0A%0AI%20would%20like%20to%20get%20in%20touch%20with%20you%20regarding%20your%20pet%20care%20services.%0A%0APlease%20contact%20me%20at%20your%20earliest%20convenience.%0A%0AThank%20you!' },
   ];
+
+  const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (href.startsWith('mailto:')) {
+      return;
+    }
+    
+    e.preventDefault();
+    const targetId = href.replace('#', '');
+    const targetElement = document.getElementById(targetId);
+    
+    if (targetElement) {
+      const headerHeight = 80;
+      const targetPosition = targetElement.offsetTop - headerHeight;
+      
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
 
   return (
     <header 
@@ -49,6 +69,7 @@ const Header = () => {
               <a
                 key={index}
                 href={item.href}
+                onClick={(e) => handleAnchorClick(e, item.href)}
                 className="text-vetly-muted hover:text-vetly-ink transition-colors duration-200 font-medium"
               >
                 {item.label}
@@ -59,9 +80,7 @@ const Header = () => {
           {/* CTA Button */}
           <div className="hidden lg:block">
             <a 
-              href="https://quiz.vetly.gg/vetly-dog"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:contact@vetly.gg?subject=Try%20Vetly%20-%20Get%20Started&body=Hi%20Vetly%20Team,%0A%0AI'm%20interested%20in%20trying%20Vetly%20for%20my%20pet%20and%20would%20like%20to%20learn%20more%20about%20your%20services.%0A%0APlease%20contact%20me%20to%20get%20started.%0A%0AThank%20you!"
               className="btn-primary inline-block"
             >
               Try Vetly
@@ -110,16 +129,17 @@ const Header = () => {
                   key={index}
                   href={item.href}
                   className="text-vetly-muted hover:text-vetly-ink transition-colors duration-200 font-medium py-2"
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={(e) => {
+                    handleAnchorClick(e, item.href);
+                    setIsMenuOpen(false);
+                  }}
                 >
                   {item.label}
                 </a>
               ))}
               <div className="pt-4">
                 <a 
-                  href="https://quiz.vetly.gg/vetly-dog"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="mailto:contact@vetly.gg?subject=Try%20Vetly%20-%20Get%20Started&body=Hi%20Vetly%20Team,%0A%0AI'm%20interested%20in%20trying%20Vetly%20for%20my%20pet%20and%20would%20like%20to%20learn%20more%20about%20your%20services.%0A%0APlease%20contact%20me%20to%20get%20started.%0A%0AThank%20you!"
                   className="btn-primary w-full inline-block text-center"
                 >
                   Try Vetly

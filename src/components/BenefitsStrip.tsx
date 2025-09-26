@@ -66,7 +66,7 @@ const BenefitsStrip = () => {
             {benefits.map((benefit, index) => (
               <div
                 key={index}
-                className="animate-on-scroll bg-white rounded-full p-4 md:p-6 hover:shadow-lg transition-all duration-200"
+                className="animate-on-scroll bg-white rounded-full p-4 md:p-6 hover:shadow-lg transition-all duration-200 flex justify-center items-center"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="flex items-center gap-3">
@@ -84,9 +84,7 @@ const BenefitsStrip = () => {
           {/* CTA Button */}
           <div className="animate-on-scroll" style={{ animationDelay: '0.8s' }}>
             <a 
-              href="https://quiz.vetly.gg/vetly-dog"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:contact@vetly.gg?subject=Get%20Started%20with%20Stress-Free%20Pet%20Care&body=Hi%20Vetly%20Team,%0A%0AI'm%20interested%20in%20enjoying%20stress-free%20pet%20care%20with%20Vetly.%20I%20would%20like%20to%20learn%20more%20about%20your%20expert-approved%20care%20methods%20and%20services.%0A%0APlease%20contact%20me%20to%20get%20started.%0A%0AThank%20you!"
               className="btn-secondary text-lg px-8 py-4 inline-block"
             >
               Get Started
