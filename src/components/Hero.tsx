@@ -19,7 +19,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative bg-gradient-to-br from-vetly-pink to-vetly-pink-dark h-[400px] flex items-center overflow-hidden rounded-tl-0 rounded-tr-0 rounded-br-[100px] rounded-bl-[100px]">
+    <section className="relative bg-gradient-to-br from-vetly-pink to-vetly-pink-dark h-[55vh] sm:h-[55vh] md:h-[55vh] lg:h-[400px] flex items-center overflow-hidden rounded-tl-0 rounded-tr-0 rounded-br-[100px] rounded-bl-[100px]">
       {/* Background decorative shapes */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-10 w-32 h-32 bg-white/10 rounded-full blur-xl"></div>
@@ -27,9 +27,9 @@ const Hero = () => {
       </div>
 
       <div className="container relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center h-full">
           {/* Content */}
-          <div className="text-white space-y-8 text-center lg:text-left animate-fade-in">
+          <div className="text-white space-y-4 sm:space-y-6 lg:space-y-8 text-center lg:text-left animate-fade-in">
             <h1 className="text-hero-mobile md:text-hero-desktop font-bold leading-tight text-balance text-white">
               The go-to app for new and future dog parents
             </h1>
@@ -48,7 +48,7 @@ const Hero = () => {
           
           {/* Illustration */}
           <div className="relative flex justify-center lg:justify-end">
-            <div ref={dogRef} className="relative w-80 h-80 lg:w-96 lg:h-96">
+            <div ref={dogRef} className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
               {/* Background circle */}
               <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-white/5 rounded-full"></div>
               
