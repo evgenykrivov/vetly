@@ -29,7 +29,7 @@ const Hero = () => {
       <div className="container relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center h-full">
           {/* Content */}
-          <div className="text-white space-y-4 sm:space-y-6 lg:space-y-8 text-center lg:text-left animate-fade-in">
+          <div className="text-white space-y-4 sm:space-y-6 lg:space-y-8 text-center lg:text-left animate-fade-in mt-[70px] lg:mt-0">
             <h1 className="text-hero-mobile md:text-hero-desktop font-bold leading-tight text-balance text-white">
               The go-to app for new and future dog parents
             </h1>
