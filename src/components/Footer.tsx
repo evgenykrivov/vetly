@@ -106,7 +106,7 @@ const Footer = () => {
           
           {/* Navigation links */}
           <div>
-            <h3 className="font-semibold mb-4">Company</h3>
+            <h3 className="font-semibold mb-4 text-white">Company</h3>
             <ul className="space-y-3 text-white/70">
               <li>
                 <button 
@@ -128,7 +128,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="font-semibold mb-4">Legal</h3>
+            <h3 className="font-semibold mb-4 text-white">Resources</h3>
             <ul className="space-y-3 text-white/70">
               <li>
                 <a 
@@ -148,6 +148,16 @@ const Footer = () => {
                   className="hover:text-white transition-colors duration-200"
                 >
                   Terms of Use
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://vetly.gg/pricing"
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors duration-200"
+                >
+                  Pricing
                 </a>
               </li>
             </ul>
