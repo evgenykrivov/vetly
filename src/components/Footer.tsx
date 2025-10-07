@@ -41,16 +41,18 @@ const Footer = () => {
                   for every pet parent, while ensuring every dog lives their happiest, healthiest life.</em>
                 </p>
                 
-                <div>
-                  <h3 className="text-xl font-semibold mb-3">What We Offer:</h3>
+                
+                <div className="bg-gradient-to-r from-vetly-orange/10 to-vetly-pink/10 p-4 rounded-xl border border-vetly-orange/20">
+                  <h3 className="text-xl font-semibold mb-3 text-vetly-orange">PRO Subscription Benefits:</h3>
                   <ul className="space-y-2 ml-4">
-                    <li>• Personalized care plans tailored to your dog's breed and lifestyle</li>
-                    <li>• 24/7 access to licensed veterinarians and pet care experts</li>
-                    <li>• Evidence-based training modules and behavioral guidance</li>
-                    <li>• Health tracking and wellness monitoring tools</li>
-                    <li>• Daily wellness tips and expert advice</li>
-                    <li>• Emergency consultation services</li>
+                    <li>• <strong>Full Access to AI Chats:</strong> Get quick help and enjoy 24/7 support from our team</li>
+                    <li>• <strong>Unlimited Training Programs:</strong> Benefit from our personalized and diverse training programs tailored to your pet's needs</li>
+                    <li>• <strong>Exclusive Video Content:</strong> Access all our high-quality videos for effective visual learning and training techniques</li>
+                    <li>• <strong>Advanced Journaling:</strong> Track your progress, stay motivated, and analyze your results for continuous improvement</li>
                   </ul>
+                  <p className="mt-3 text-sm text-vetly-muted">
+                    <em>Note: At this time, Vetly.gg does not provide custom or enterprise plans.</em>
+                  </p>
                 </div>
                 
                 <p>

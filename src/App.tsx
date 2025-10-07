@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import PillList from './components/PillList';
 import TrustBlock from './components/TrustBlock';
 import Features from './components/Features';
+import ProBenefitsSection from './components/ProBenefitsSection';
 import BenefitsStrip from './components/BenefitsStrip';
 import CommunityMarquee from './components/CommunityMarquee';
 import StorePitch from './components/StorePitch';
@@ -18,6 +19,7 @@ function App() {
       <PillList />
       <TrustBlock />
       <Features />
+      <ProBenefitsSection />
       <BenefitsStrip />
       <CommunityMarquee />
       <StorePitch />
