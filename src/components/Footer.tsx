@@ -98,7 +98,9 @@ const Footer = () => {
             {/* CTA Button */}
             <div className="mt-6">
               <a 
-                href="mailto:contact@vetly.gg?subject=Get%20Started%20with%20Vetly&body=Hi%20Vetly%20Team,%0A%0AI'm%20interested%20in%20getting%20started%20with%20Vetly%20for%20my%20pet.%20I%20would%20like%20to%20learn%20more%20about%20your%20comprehensive%20pet%20care%20services.%0A%0APlease%20contact%20me%20to%20get%20started.%0A%0AThank%20you!"
+                href="https://quiz.vetly.gg/vetly-dog"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-vetly-pink hover:bg-vetly-pink-dark text-white px-6 py-3 rounded-full font-semibold transition-colors duration-200 inline-block text-center"
               >
                 Get Started with Vetly

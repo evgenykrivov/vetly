@@ -80,7 +80,9 @@ const Header = () => {
           {/* CTA Button */}
           <div className="hidden lg:block">
             <a 
-              href="mailto:contact@vetly.gg?subject=Try%20Vetly%20-%20Get%20Started&body=Hi%20Vetly%20Team,%0A%0AI'm%20interested%20in%20trying%20Vetly%20for%20my%20pet%20and%20would%20like%20to%20learn%20more%20about%20your%20services.%0A%0APlease%20contact%20me%20to%20get%20started.%0A%0AThank%20you!"
+              href="https://quiz.vetly.gg/vetly-dog"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-primary inline-block"
             >
               Try Vetly
@@ -139,7 +141,9 @@ const Header = () => {
               ))}
               <div className="pt-4">
                 <a 
-                  href="mailto:contact@vetly.gg?subject=Try%20Vetly%20-%20Get%20Started&body=Hi%20Vetly%20Team,%0A%0AI'm%20interested%20in%20trying%20Vetly%20for%20my%20pet%20and%20would%20like%20to%20learn%20more%20about%20your%20services.%0A%0APlease%20contact%20me%20to%20get%20started.%0A%0AThank%20you!"
+                  href="https://quiz.vetly.gg/vetly-dog"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="btn-primary w-full inline-block text-center"
                 >
                   Try Vetly
