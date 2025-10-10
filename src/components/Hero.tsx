@@ -38,7 +38,9 @@ const Hero = () => {
             </p>
             <div>
               <a 
-                href="mailto:contact@vetly.gg?subject=Start%20Training%20with%20Vetly&body=Hi%20Vetly%20Team,%0A%0AI'm%20interested%20in%20starting%20training%20with%20my%20dog%20and%20would%20like%20to%20learn%20more%20about%20your%20services.%0A%0APlease%20get%20in%20touch%20with%20me%20to%20discuss%20how%20Vetly%20can%20help%20my%20pet.%0A%0AThank%20you!"
+                href="https://quiz.vetly.gg/vetly-dog"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-secondary text-lg px-8 py-4 inline-block"
               >
                 Start Training

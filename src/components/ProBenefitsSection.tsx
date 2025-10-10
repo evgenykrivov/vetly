@@ -101,7 +101,9 @@ const ProBenefitsSection = () => {
               Upgrade to PRO today and give your pet the best care possible!
             </p>
             <a 
-              href="mailto:contact@vetly.gg?subject=Upgrade%20to%20Vetly%20PRO&body=Hi%20Vetly%20Team,%0A%0AI'm%20interested%20in%20upgrading%20to%20Vetly%20PRO%20to%20get%20enhanced%20features%20for%20my%20pet%20care.%20I%20would%20like%20to%20learn%20more%20about:%0A%0A-%20Full%20Access%20to%20AI%20Chats%0A-%20Unlimited%20Training%20Programs%0A-%20Exclusive%20Video%20Content%0A-%20Advanced%20Journaling%0A%0APlease%20contact%20me%20with%20pricing%20and%20subscription%20details.%0A%0AThank%20you!"
+              href="https://quiz.vetly.gg/vetly-dog"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-primary text-lg px-8 py-4 inline-block"
             >
               Upgrade to PRO
