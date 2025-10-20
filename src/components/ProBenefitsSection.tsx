@@ -26,8 +26,8 @@ const ProBenefitsSection = () => {
   const proBenefits = [
     { 
       icon: "💬", 
-      title: "Full Access to AI Chats", 
-      description: "Get quick help and enjoy 24/7 support from our team" 
+      title: "Full Access to AI Assistant", 
+      description: "Get instant AI-powered guidance and answers to your pet care questions anytime" 
     },
     { 
       icon: "🎯", 
@@ -108,6 +108,9 @@ const ProBenefitsSection = () => {
             >
               Upgrade to PRO
             </a>
+            <p className="text-sm text-vetly-ink/60 mt-6">
+              Payments are processed by Paddle.com (Merchant of Record). Taxes and refunds are handled by Paddle.
+            </p>
           </div>
 
           {/* Enterprise Note */}

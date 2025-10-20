@@ -42,10 +42,10 @@ const CommunityMarquee = () => {
       <div className="container">
         <div className="text-center mb-12 animate-on-scroll">
           <h2 className="text-h2-mobile md:text-h2 font-bold text-vetly-ink mb-4">
-            Join Our Vetly Community
+            Why Pet Parents Choose Vetly
           </h2>
           <p className="text-body-mobile md:text-body text-vetly-muted max-w-2xl mx-auto">
-            Join thousands of happy pet parents who trust Vetly for their furry family members
+            All-in-one training & wellness app — proven to reduce stress and speed up progress
           </p>
         </div>
 
@@ -78,15 +78,15 @@ const CommunityMarquee = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 text-center animate-on-scroll" style={{ animationDelay: '0.5s' }}>
           <div>
             <div className="text-3xl md:text-4xl font-bold text-vetly-pink mb-2">10,000+</div>
-            <div className="text-vetly-muted">Happy Pet Parents</div>
+            <div className="text-vetly-muted">dog parents use Vetly</div>
           </div>
           <div>
             <div className="text-3xl md:text-4xl font-bold text-vetly-pink mb-2">25,000+</div>
-            <div className="text-vetly-muted">Pets Cared For</div>
+            <div className="text-vetly-muted">lessons completed</div>
           </div>
           <div>
             <div className="text-3xl md:text-4xl font-bold text-vetly-pink mb-2">500+</div>
-            <div className="text-vetly-muted">Expert Vets</div>
+            <div className="text-vetly-muted">training videos & activities</div>
           </div>
         </div>
       </div>

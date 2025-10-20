@@ -99,14 +99,14 @@ const Features = () => {
         <div className="w-48 h-48 lg:w-[400px] lg:h-[400px] flex items-center justify-center">
           <img 
             src="/vetExpert.png" 
-            alt="Vet & Expert Consultations" 
+            alt="AI Training Assistant" 
             className="w-full h-full object-contain"
             loading="lazy"
           />
         </div>
       ),
-      title: "Vet & Expert Consultations",
-      description: "Need advice? Instantly reach out to certified vets or pet care experts whenever questions arise — no appointments needed"
+      title: "AI Training Assistant",
+      description: "Get step-by-step guidance and personalized plans based on vet-reviewed knowledge (educational use only, not a medical service)"
     }
   ];
 

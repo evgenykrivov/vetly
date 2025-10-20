@@ -68,7 +68,7 @@ const Reviews = () => {
           M
         </div>
       ),
-      text: "The vet consultations feature saved us a trip to the emergency clinic. Quick, professional advice right when we needed it most.",
+      text: "The AI assistant and vet-reviewed guides helped us understand our dog's behavior better. Quick, reliable guidance right when we needed it most.",
       rating: 5
     },
     {

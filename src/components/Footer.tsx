@@ -45,19 +45,22 @@ const Footer = () => {
                 <div className="bg-gradient-to-r from-vetly-orange/10 to-vetly-pink/10 p-4 rounded-xl border border-vetly-orange/20">
                   <h3 className="text-xl font-semibold mb-3 text-vetly-orange">PRO Subscription Benefits:</h3>
                   <ul className="space-y-2 ml-4">
-                    <li>• <strong>Full Access to AI Chats:</strong> Get quick help and enjoy 24/7 support from our team</li>
+                    <li>• <strong>Full Access to AI Assistant:</strong> Get instant AI-powered guidance and answers to your pet care questions anytime</li>
                     <li>• <strong>Unlimited Training Programs:</strong> Benefit from our personalized and diverse training programs tailored to your pet's needs</li>
                     <li>• <strong>Exclusive Video Content:</strong> Access all our high-quality videos for effective visual learning and training techniques</li>
                     <li>• <strong>Advanced Journaling:</strong> Track your progress, stay motivated, and analyze your results for continuous improvement</li>
                   </ul>
                   <p className="mt-3 text-sm text-vetly-muted">
+                    <em>Payments are processed by Paddle.com (Merchant of Record). Taxes and refunds are handled by Paddle.</em>
+                  </p>
+                  <p className="mt-2 text-sm text-vetly-muted">
                     <em>Note: At this time, Vetly.gg does not provide custom or enterprise plans.</em>
                   </p>
                 </div>
                 
                 <p>
-                  Trusted by over 10,000 pet parents and 500+ veterinary professionals, 
-                  Vetly has helped more than 25,000 pets live healthier, happier lives.
+                  Trusted by over 10,000 pet parents, 
+                  Vetly has helped train and care for more than 25,000 pets with vet-reviewed content and AI-powered guidance.
                 </p>
                 
                 <div className="bg-vetly-cream p-4 rounded-xl">
@@ -169,6 +172,13 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-white/10 pt-8">
+          <div className="mb-6 text-center">
+            <p className="text-white/50 text-sm max-w-3xl mx-auto">
+              Vetly provides educational information only and is not a substitute for professional veterinary advice or emergency care. 
+              Always consult with a licensed veterinarian for medical concerns about your pet.
+            </p>
+          </div>
+          
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-white/50 text-sm">
               Copyright © 2025 Vetly LTD. All rights reserved.
