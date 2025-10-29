@@ -108,9 +108,6 @@ const ProBenefitsSection = () => {
             >
               Upgrade to PRO
             </a>
-            <p className="text-sm text-vetly-ink/60 mt-6">
-              Payments are processed by Paddle.com (Merchant of Record). Taxes and refunds are handled by Paddle.
-            </p>
           </div>
 
           {/* Enterprise Note */}
