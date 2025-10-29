@@ -2,7 +2,6 @@
 import Header from './components/Header';
 import Hero from './components/Hero';
 import PillList from './components/PillList';
-import TrustBlock from './components/TrustBlock';
 import Features from './components/Features';
 import ProBenefitsSection from './components/ProBenefitsSection';
 import BenefitsStrip from './components/BenefitsStrip';
