@@ -17,7 +17,6 @@ function App() {
       <Header />
       <Hero />
       <PillList />
-      <TrustBlock />
       <Features />
       <ProBenefitsSection />
       <BenefitsStrip />
