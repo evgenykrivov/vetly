@@ -24,12 +24,12 @@ const BenefitsStrip = () => {
   }, []);
 
   const benefits = [
-    { icon: "🐾", text: "Gentle, expert-approved care methods" },
-    { icon: "👋", text: "24/7 access to Vet Assistant" },
-    { icon: "🎬", text: "Clear and simple health tutorials" },
+    { icon: "🐾", text: "Fun, AI-powered training methods" },
+    { icon: "👋", text: "24/7 access to AI Training Assistant" },
+    { icon: "🎬", text: "Clear and simple training tutorials" },
     { icon: "💳", text: "Smart pricing with flexible plans" },
-    { icon: "🐕", text: "Personalized care based on breed and age" },
-    { icon: "👥", text: "Health records available for all family members" }
+    { icon: "🐕", text: "Personalized training based on breed and age" },
+    { icon: "👥", text: "Training progress available for all family members" }
   ];
 
   return (
@@ -57,7 +57,7 @@ const BenefitsStrip = () => {
         <div className="max-w-[1200px] mx-auto text-center text-white">
           <div className="animate-on-scroll">
             <h2 className="text-h2-mobile md:text-h2 font-bold mb-12 text-white">
-              Enjoy stress-free pet care with Vetly
+              Enjoy fun and easy pet training with Vetly
             </h2>
           </div>
 

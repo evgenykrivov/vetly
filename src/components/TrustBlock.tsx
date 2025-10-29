@@ -51,13 +51,13 @@ const TrustBlock = () => {
   const testimonials = [
     {
       name: "Olivia Bennett",
-      title: "Licensed veterinarian, expert in preventive care and stress-free pet parenting",
-      testimonial: "With Vetly, you can confidently care for your pet's health through personalized guidance, created by licensed veterinarians. Whether it's regular check-ups, behavior concerns, or sudden symptoms, Vetly helps you understand your pet's needs at every stage of life. From daily wellness tips to expert advice, you and your pet can enjoy a healthier, happier life — with less stress and more peace of mind",
+      title: "Pet training enthusiast and behavior specialist",
+      testimonial: "Vetly has transformed how I approach dog training and daily routines with my pets. The AI-powered guidance and personalized training programs make it so easy to build strong habits and create meaningful moments with your furry friend every day.",
       avatar: (
         <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-white shadow-lg">
           <img 
             src="/olivia.png" 
-            alt="Dr. Olivia Bennett - Licensed veterinarian" 
+            alt="Olivia Bennett - Pet training enthusiast" 
             className="w-full h-full object-cover"
             loading="lazy"
           />
@@ -65,14 +65,14 @@ const TrustBlock = () => {
       )
     },
     {
-      name: "Dr. Sarah Williams",
-      title: "Animal behaviorist, certified dog trainer",
-      testimonial: "Vetly has revolutionized how pet parents approach dog training and care. The evidence-based methods and personalized approach make it accessible for everyone, regardless of experience level. I've seen remarkable improvements in both dogs and their families using this platform.",
+      name: "Sarah Williams",
+      title: "Professional dog trainer and behavior coach",
+      testimonial: "Vetly has revolutionized how pet parents approach dog training. The evidence-based training methods and personalized approach make it accessible for everyone, regardless of experience level. I've seen remarkable improvements in both dogs and their families using this platform.",
       avatar: (
         <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-white shadow-lg">
           <img 
             src="/sarah.png" 
-            alt="Dr. Sarah Williams - Animal behaviorist" 
+            alt="Sarah Williams - Professional dog trainer" 
             className="w-full h-full object-cover"
             loading="lazy"
           />
@@ -80,14 +80,14 @@ const TrustBlock = () => {
       )
     },
     {
-      name: "Dr. Michael Chen",
-      title: "Veterinary nutritionist and wellness expert",
-      testimonial: "The comprehensive approach to pet wellness in Vetly is outstanding. It combines medical expertise with practical daily care, making it an invaluable resource for any pet parent who wants to provide the best care for their furry family member.",
+      name: "Michael Chen",
+      title: "Dog training specialist and pet lifestyle expert",
+      testimonial: "The comprehensive approach to dog training in Vetly is outstanding. It combines smart AI technology with practical daily activities, making it an invaluable resource for any pet parent who wants to build a strong bond with their furry family member.",
       avatar: (
         <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-white shadow-lg">
           <img 
             src="/chen.png" 
-            alt="Dr. Michael Chen - Veterinary nutritionist" 
+            alt="Michael Chen - Dog training specialist" 
             className="w-full h-full object-cover"
             loading="lazy"
           />
@@ -102,11 +102,11 @@ const TrustBlock = () => {
         {/* Header */}
         <div className="text-center mb-12 animate-on-scroll">
           <h2 className="text-h2-mobile md:text-h2 font-bold text-vetly-ink mb-6">
-            Trusted by Vets. Loved by Pet Parents
+            Trusted by Trainers. Loved by Pet Parents
           </h2>
           <p className="text-lg text-vetly-ink max-w-4xl mx-auto leading-relaxed">
-            Vetly is built on real veterinary knowledge and deep care for animals. Every feature is developed in 
-            collaboration with licensed experts and backed by the latest medical research — because your pet 
+            Vetly is built with passion for animals and powered by AI technology. Every feature is designed to 
+            help you train, bond with, and enjoy quality time with your pet — because your furry friend 
             deserves nothing but the best
           </p>
         </div>

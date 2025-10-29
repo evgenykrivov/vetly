@@ -46,7 +46,7 @@ const Reviews = () => {
           C
         </div>
       ),
-      text: "As a first-time dog owner, I was overwhelmed until I found Vetly. The personalized care plans have made pet ownership so much more manageable.",
+      text: "As a first-time dog owner, I was overwhelmed until I found Vetly. The personalized training programs have made pet ownership so much more manageable.",
       rating: 5
     },
     {
@@ -57,7 +57,7 @@ const Reviews = () => {
           E
         </div>
       ),
-      text: "The health tracking features are fantastic! I love how I can monitor my dog's wellness and get reminders for important checkups.",
+      text: "The progress tracking features are fantastic! I love how I can monitor my dog's training and get reminders for daily sessions.",
       rating: 5
     },
     {
@@ -68,7 +68,7 @@ const Reviews = () => {
           M
         </div>
       ),
-      text: "The AI assistant and vet-reviewed guides helped us understand our dog's behavior better. Quick, reliable guidance right when we needed it most.",
+      text: "The AI assistant and smart training guides helped us understand our dog's behavior better. Quick, reliable guidance right when we needed it most.",
       rating: 5
     },
     {
@@ -79,7 +79,7 @@ const Reviews = () => {
           J
         </div>
       ),
-      text: "Love the daily wellness tips! My rescue dog has never been healthier. The training modules are easy to follow and really effective.",
+      text: "Love the daily training tips! My rescue dog has never been happier. The training modules are easy to follow and really effective.",
       rating: 5
     },
     {
@@ -90,7 +90,7 @@ const Reviews = () => {
           D
         </div>
       ),
-      text: "Vetly helped us bond with our new puppy. The expert guidance and personalized care plans are worth every penny.",
+      text: "Vetly helped us bond with our new puppy. The AI guidance and personalized training programs are worth every penny.",
       rating: 5
     },
     {
@@ -112,7 +112,7 @@ const Reviews = () => {
           T
         </div>
       ),
-      text: "Excellent app for busy pet parents. The reminders and health tracking keep me organized and my dog healthy.",
+      text: "Excellent app for busy pet parents. The reminders and progress tracking keep me organized and my dog engaged.",
       rating: 5
     },
     {

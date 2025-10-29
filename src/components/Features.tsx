@@ -29,42 +29,42 @@ const Features = () => {
         <div className="w-48 h-48 lg:w-[400px] lg:h-[400px] flex items-center justify-center">
           <img 
             src="/personalized.png" 
-            alt="Personalized Care Plan" 
+            alt="Personalized Training Plan" 
             className="w-full h-full object-contain"
             loading="lazy"
           />
         </div>
       ),
-      title: "Personalized Care Plan",
-      description: "Get a health care routine tailored to your pet's breed, age, and lifestyle — with step-by-step guides and daily wellness tips"
+      title: "Personalized Training Plan",
+      description: "Get a custom training routine tailored to your pet's breed, age, and lifestyle — with step-by-step guides and daily training tips"
     },
     {
       icon: (
         <div className="w-48 h-48 lg:w-[400px] lg:h-[400px] flex items-center justify-center">
           <img 
             src="/quickDaily.png" 
-            alt="Quick Daily Health Routines" 
+            alt="Quick Daily Training Routines" 
             className="w-full h-full object-contain"
             loading="lazy"
           />
         </div>
       ),
-      title: "Quick Daily Health Routines",
-      description: "Support your pet's well-being with short daily tasks — just 15–20 minutes a day from the comfort of your home"
+      title: "Quick Daily Training Routines",
+      description: "Build better habits with short daily training sessions — just 15–20 minutes a day from the comfort of your home"
     },
     {
       icon: (
         <div className="w-48 h-48 lg:w-[400px] lg:h-[400px] flex items-center justify-center">
           <img 
             src="/healthWellness.png" 
-            alt="Health & Wellness Tracker" 
+            alt="Progress & Activity Tracker" 
             className="w-full h-full object-contain"
             loading="lazy"
           />
         </div>
       ),
-      title: "Health & Wellness Tracker",
-      description: "Easily monitor your pet's key health metrics, get reminders for checkups, and stay in control of their schedule — even remotely"
+      title: "Progress & Activity Tracker",
+      description: "Easily monitor your pet's training progress, get reminders for daily sessions, and stay on top of their learning journey — even remotely"
     },
     {
       icon: (
@@ -78,7 +78,7 @@ const Features = () => {
         </div>
       ),
       title: "Activity & Walk Insights",
-      description: "Track your pet's movement and daily walks, set exercise goals, and create healthy routines with interactive maps"
+      description: "Track your pet's movement and daily walks, set exercise goals, and create fun routines with interactive maps"
     },
     {
       icon: (
@@ -92,7 +92,7 @@ const Features = () => {
         </div>
       ),
       title: "Stronger Bond With Your Pet",
-      description: "Understand your furry companion's emotional and physical needs through expert-backed tips, calming sounds, and care rituals"
+      description: "Understand your furry companion's behavior through fun activities, calming sounds, and daily bonding rituals"
     },
     {
       icon: (
@@ -106,7 +106,7 @@ const Features = () => {
         </div>
       ),
       title: "AI Training Assistant",
-      description: "Get step-by-step guidance and personalized plans based on vet-reviewed knowledge (educational use only, not a medical service)"
+      description: "Get step-by-step guidance and personalized training plans powered by AI — for educational and entertainment purposes only"
     }
   ];
 

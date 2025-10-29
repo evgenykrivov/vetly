@@ -34,7 +34,7 @@ const Hero = () => {
               The go-to app for new and future dog parents
             </h1>
             <p className="text-xl text-white/90 leading-relaxed max-w-lg mx-auto lg:mx-0">
-              Help your pup grow happy, healthy, and well-behaved
+              Help your pup grow happy, confident, and well-behaved
             </p>
             <div>
               <a 

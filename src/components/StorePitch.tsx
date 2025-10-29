@@ -36,7 +36,7 @@ const StorePitch = () => {
           {/* Content */}
           <div className="text-white space-y-6 animate-on-scroll">
             <h2 className="text-h2-mobile md:text-h2 font-light leading-tight">
-              If your dog could choose an app, Vetly would be their top pick for health and training
+              If your dog could choose an app, Vetly would be their top pick for fun and training
             </h2>
             <p className="text-[32px] leading-relaxed font-bold text-black">
               So, why not give them the best?

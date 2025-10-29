@@ -26,48 +26,45 @@ const Footer = () => {
               
               <div className="space-y-4 text-vetly-ink leading-relaxed">
                 <p>
-                  <strong>Vetly</strong> is the comprehensive pet care platform that transforms how pet parents 
-                  approach their furry family member's health, training, and overall wellbeing.
+                  <strong>Vetly</strong> is the comprehensive pet training platform that transforms how pet parents 
+                  approach their furry family member's training, behavior, and daily routines.
                 </p>
                 
                 <p>
-                  Built by a team of passionate pet lovers, veterinarians, and technology experts, 
-                  Vetly combines cutting-edge technology with evidence-based veterinary science to 
-                  provide personalized care solutions for every dog, regardless of breed, age, or needs.
+                  Built by a team of passionate pet lovers, trainers, and technology experts, 
+                  Vetly combines cutting-edge AI technology with proven training methods to 
+                  provide personalized training programs for every dog, regardless of breed, age, or needs.
                 </p>
                 
                 <p>
-                  Our mission is simple: <em>to make pet care accessible, stress-free, and effective 
-                  for every pet parent, while ensuring every dog lives their happiest, healthiest life.</em>
+                  Our mission is simple: <em>to make pet training accessible, fun, and effective 
+                  for every pet parent, while ensuring every dog enjoys quality time with their family.</em>
                 </p>
                 
                 
                 <div className="bg-gradient-to-r from-vetly-orange/10 to-vetly-pink/10 p-4 rounded-xl border border-vetly-orange/20">
                   <h3 className="text-xl font-semibold mb-3 text-vetly-orange">PRO Subscription Benefits:</h3>
                   <ul className="space-y-2 ml-4">
-                    <li>• <strong>Full Access to AI Assistant:</strong> Get instant AI-powered guidance and answers to your pet care questions anytime</li>
+                    <li>• <strong>Full Access to AI Assistant:</strong> Get instant AI-powered guidance and answers to your pet training questions anytime</li>
                     <li>• <strong>Unlimited Training Programs:</strong> Benefit from our personalized and diverse training programs tailored to your pet's needs</li>
-                    <li>• <strong>Exclusive Video Content:</strong> Access all our high-quality videos for effective visual learning and training techniques</li>
-                    <li>• <strong>Advanced Journaling:</strong> Track your progress, stay motivated, and analyze your results for continuous improvement</li>
+                    <li>• <strong>Exclusive Video Content:</strong> Access all our high-quality training videos for effective learning and fun activities</li>
+                    <li>• <strong>Advanced Progress Tracking:</strong> Track your training progress, stay motivated, and see your pet's improvements</li>
                   </ul>
                   <p className="mt-3 text-sm text-vetly-muted">
-                    <em>Payments are processed by Paddle.com (Merchant of Record). Taxes and refunds are handled by Paddle.</em>
-                  </p>
-                  <p className="mt-2 text-sm text-vetly-muted">
                     <em>Note: At this time, Vetly.gg does not provide custom or enterprise plans.</em>
                   </p>
                 </div>
                 
                 <p>
                   Trusted by over 10,000 pet parents, 
-                  Vetly has helped train and care for more than 25,000 pets with vet-reviewed content and AI-powered guidance.
+                  Vetly has helped train more than 25,000 pets with AI-powered guidance and fun training programs.
                 </p>
                 
                 <div className="bg-vetly-cream p-4 rounded-xl">
                   <p className="font-medium text-vetly-ink">
-                    Ready to give your pet the best care possible? 
+                    Ready to start training your pet? 
                     <a 
-                      href="mailto:contact@vetly.gg?subject=Start%20Journey%20with%20Vetly&body=Hi%20Vetly%20Team,%0A%0AI'm%20ready%20to%20give%20my%20pet%20the%20best%20care%20possible%20and%20would%20like%20to%20start%20my%20journey%20with%20Vetly.%0A%0APlease%20contact%20me%20to%20learn%20more%20about%20your%20services.%0A%0AThank%20you!"
+                      href="mailto:contact@vetly.gg?subject=Start%20Training%20with%20Vetly&body=Hi%20Vetly%20Team,%0A%0AI'm%20ready%20to%20start%20training%20my%20pet%20and%20would%20like%20to%20learn%20more%20about%20Vetly.%0A%0APlease%20contact%20me.%0A%0AThank%20you!"
                       className="text-vetly-pink hover:underline ml-1"
                     >
                       Start your journey with Vetly today.
@@ -174,8 +171,8 @@ const Footer = () => {
         <div className="border-t border-white/10 pt-8">
           <div className="mb-6 text-center">
             <p className="text-white/50 text-sm max-w-3xl mx-auto">
-              Vetly provides educational information only and is not a substitute for professional veterinary advice or emergency care. 
-              Always consult with a licensed veterinarian for medical concerns about your pet.
+              Vetly is a pet training and entertainment platform. All content is for educational and entertainment purposes only. 
+              For any medical concerns about your pet, please consult a licensed veterinarian.
             </p>
           </div>
           
